@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+    color: green;
+    margin:10;
+    text-align: center;
+}
+
+h1
+{
+font-size: 48px;
+font-weight: 200;
+letter-spacing: 4px;
+text-align: center;
+font-family: 'Lato', sans-serif;
+margin-top:20px;
+
+}
+
+a:link{ color: blueviolet}
+a:visited{ color:red}
+a:active{ color:brown}
+a:hover{color:goldenrod}
+
+.table{
+    width: 1000px;
+    text-align: center;
+    margin:auto;
+}
+
+.card{
+    width:200px;
+    height: 200px;
+    display: inline-block;
+    margin:5px;
+    background-color: violet;
+    border: 5px solid gold;
+}
+
+.card:hover{color:blue}
+
+.points{
+    color:red;
+}
