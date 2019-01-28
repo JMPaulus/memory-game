@@ -39,4 +39,24 @@ function openCard(nr) // 3. the core of the game is here
     var picture = "url(img/" +cards[nr]+ ")";
     $("#card" + nr).css("background-picture", picture); //9. jQuery adds class, here we add class to the card from css and then picture
     $("#card" + nr).addClass("cardFirst"); // 10.we are adding class when clicking card the name of class is in second quote
-}
+    $("#card" + nr).removeClass("card"); // 11. removing class after revealing second card
+
+    if (firstCard== false)// 12.opening first card
+    {
+        firstCard = true; //13.first card is changed to true
+        visibleCardNumber = nr; //14. when card is opened, it becomes number in the openCard function
+    }
+    else // second card
+    if(cards[visibleCardNumber]==[nr]) // 15. when opening the cards array there is a card that has specific number and it is equaled to the number of card opened in the array
+    {
+      alert("pair"); // 16. check if there is a pair
+    }
+    else
+    {
+      alert("no pair"); // 17. check if no pair
+    }
+    
+
+  }
+
+
