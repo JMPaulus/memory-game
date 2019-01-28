@@ -3,6 +3,7 @@ body{
     color: green;
     margin:10;
     text-align: center;
+    margin:5;
 }
 
 h1
@@ -32,8 +33,9 @@ a:hover{color:goldenrod}
     height: 200px;
     display: inline-block;
     margin:5px;
-    background-color: violet;
     border: 5px solid gold;
+    background-image: url("Pictures/dino_1024x1024.png");
+    border-radius:5px;
 }
 
 .card:hover{color:blue}
