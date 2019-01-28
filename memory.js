@@ -50,7 +50,8 @@ function openCard(nr) // 3. the core of the game is here
     }
     else // second card
     {
-        numberOfMoves++;
+        numberOfMoves++; //15. the turn counter goes up one concatenate
+        $(".points").html("Number of moves: " + numberOfMoves);// 16. Added jQuery how to add one point in moves, adding to HTML
     }
     
 
