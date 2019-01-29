@@ -1,5 +1,5 @@
-var cards = ["apatosaurus.png", "tyranosaurus.png", "velociraptor.png", "diplodocus.png", "triceratops.png", "brachiosaurus.png", "apatosaurus.png", 
-"tyranosaurus.png", "velociraptor.png", "diplodocus.png", "triceratops.png", "brachiosaurus.png"];
+var cards = ["apatosaurus.png","apatosaurus.png", "tyranosaurus.png", "velociraptor.png", "diplodocus.png", "triceratops.png", 
+"brachiosaurus.png", "tyranosaurus.png", "velociraptor.png", "diplodocus.png", "triceratops.png", "brachiosaurus.png"];
 
 var card0 = document.getElementById("card0"); // 1. add element from HTML and give the ID to it
 var card1 = document.getElementById("card1");
@@ -53,7 +53,7 @@ function openCard(nr) // 3. the core of the game is here
 
         if (cards[secondOpenedCard]=[cards])
         {
-
+            alert("pair");// 18. checking if there is a pair
         }// when clicking second card I need to show  it to the js then pair
         numberOfMoves++; //15. the turn counter goes up one concatenate
         $(".points").html("Number of moves: " + numberOfMoves);// 16. Added jQuery how to add one point in moves, adding to HTML

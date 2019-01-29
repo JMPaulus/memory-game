@@ -10,31 +10,31 @@ a:visited{ color:red}
 a:active{ color:brown}
 a:hover{color:goldenrod}
 
-h1
-{
-font-size: 48px;
-font-weight: 200;
-letter-spacing: 4px;
-text-align: center;
-font-family: "Lato", sans-serif;
-margin-top:20px;
-
-}
+h1{
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    margin-top:30px;
+    margin-bottom: 5px;
+    }
 
 .table{
     width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    
-    
+    text-align: center;   
 }
+
+
+
 
 .card{
     width: 200px;
     height: 200px;
     display: inline-block;
-    margin:5px;
+    margin:10px;
     border: 5px solid gold;
     background-image: url("Pictures/dino_1024x1024.png");/* found the image! The size was bad*/
     border-radius:5px;
