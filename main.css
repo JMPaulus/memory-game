@@ -5,6 +5,10 @@ body{
     text-align: center;
     margin:5;
 }
+a:link{ color: blueviolet}
+a:visited{ color:red}
+a:active{ color:brown}
+a:hover{color:goldenrod}
 
 h1
 {
@@ -17,14 +21,10 @@ margin-top:20px;
 
 }
 
-a:link{ color: blueviolet}
-a:visited{ color:red}
-a:active{ color:brown}
-a:hover{color:goldenrod}
-
 .table{
     width: 1000px;
-    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     margin:auto;
 }
 
@@ -43,5 +43,5 @@ a:hover{color:goldenrod}
 .points{
     color:red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
+    font-size: 35px;
 }
