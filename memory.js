@@ -1,5 +1,6 @@
 var cards = ["apatosaurus.png", "brachiosaurus.png", "diplodocus.png", "triceratops.png", 
-"tryranosaurus.png", "velociraptor.png"];
+"tyranosaurus.png", "velociraptor.png","apatosaurus.png", "brachiosaurus.png", "diplodocus.png", "triceratops.png", 
+"tyranosaurus.png", "velociraptor.png"];
 
 var card0 = document.getElementById("card0"); // 1. add element from HTML and give the ID to it
 var card1 = document.getElementById("card1");
@@ -36,7 +37,7 @@ var numberOfMoves = 0; // 5. turn counter
 var visibleCardNumber; // 8. adding var that shows opened cards' number
 
 function openCard(nr) // 3. the core of the game is here
-{
+{  // alert(nr);
     var picture = "url(img/" + cards[nr] + ")";
 
     $("#card" + nr).css("background-picture", picture); //9. jQuery adds class, here we add class to the card from css and then picture
@@ -49,9 +50,10 @@ function openCard(nr) // 3. the core of the game is here
         //visibleCardNumber = nr; //14. when card is opened, it becomes number in the openCard function
     }
     else // second card
-    {
+    {   //alert(nr);
         numberOfMoves++; //15. the turn counter goes up one concatenate
         $(".points").html("Number of moves: " + numberOfMoves);// 16. Added jQuery how to add one point in moves, adding to HTML
+       firstCard = false; //17. first card is covered
     }
     
 
