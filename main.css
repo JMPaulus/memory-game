@@ -16,16 +16,18 @@ font-size: 48px;
 font-weight: 200;
 letter-spacing: 4px;
 text-align: center;
-font-family: 'Lato', sans-serif;
+font-family: "Lato", sans-serif;
 margin-top:20px;
 
 }
 
 .table{
-    width: 1000px;
+    width: 800px;
+    height:800px;
     margin-right: auto;
     margin-left: auto;
-    margin:auto;
+    text-align: center;
+    
 }
 
 .card{
@@ -36,6 +38,7 @@ margin-top:20px;
     border: 5px solid gold;
     background-image: url("Pictures/dino_1024x1024.png");
     border-radius:5px;
+    cursor: progress;
 }
 
 .card:hover{color:blue}

@@ -1,5 +1,5 @@
-var cards = ["brachiosaurus.png", "velociraptor.png", "apatosaurus.png",
-"tyranosaurus.png", "triceratops.png", "diplodocus.png"];
+var cards = ["apatosaurus.png", "brachiosaurus.png", "diplodocus.png", "triceratops.png", 
+"tryranosaurus.png", "velociraptor.png"];
 
 var card0 = document.getElementById("card0"); // 1. add element from HTML and give the ID to it
 var card1 = document.getElementById("card1");
