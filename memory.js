@@ -34,7 +34,7 @@ card11.addEventListener("click", function() {openCard(11);});
 
 var firstCard = false; // 4. boolean for first card
 var numberOfMoves = 0; // 5. turn counter
-var visibleCardNumber; // 8. adding var that shows opened cards' number
+var secondOpenedcard; // 8. adding var that shows opened cards' number
 
 function openCard(nr) // 3. the core of the game is here
 {  // alert(nr);
@@ -51,6 +51,8 @@ function openCard(nr) // 3. the core of the game is here
     }
     else // second card
     {   //alert(nr);
+
+        if (cards[secondOpenedcard]=[cards])// when clicking second card I need to show  it to the js then pair
         numberOfMoves++; //15. the turn counter goes up one concatenate
         $(".points").html("Number of moves: " + numberOfMoves);// 16. Added jQuery how to add one point in moves, adding to HTML
        firstCard = false; //17. first card is covered
