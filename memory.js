@@ -1,6 +1,5 @@
-var cards = ["apatosaurus.png", "brachiosaurus.png", "diplodocus.png", "triceratops.png", 
-"tyranosaurus.png", "velociraptor.png","apatosaurus.png", "brachiosaurus.png", "diplodocus.png", "triceratops.png", 
-"tyranosaurus.png", "velociraptor.png"];
+var cards = ["apatosaurus.png", "tyranosaurus.png", "velociraptor.png", "diplodocus.png", "triceratops.png", "brachiosaurus.png", "apatosaurus.png", 
+"tyranosaurus.png", "velociraptor.png", "diplodocus.png", "triceratops.png", "brachiosaurus.png"];
 
 var card0 = document.getElementById("card0"); // 1. add element from HTML and give the ID to it
 var card1 = document.getElementById("card1");
@@ -34,11 +33,11 @@ card11.addEventListener("click", function() {openCard(11);});
 
 var firstCard = false; // 4. boolean for first card
 var numberOfMoves = 0; // 5. turn counter
-var secondOpenedcard; // 8. adding var that shows opened cards' number
+var secondOpenedCard; // 8. adding var that shows opened cards' number
 
 function openCard(nr) // 3. the core of the game is here
 {  // alert(nr);
-    var picture = "url(img/" + cards[nr] + ")";
+    var picture = "url(Pictures/" + cards[nr] + ")";
 
     $("#card" + nr).css("background-picture", picture); //9. jQuery adds class, here we add class to the card from css and then picture
     $("#card" + nr).addClass("cardFirst"); // 10.we are adding class when clicking card the name of class is in second quote
@@ -47,12 +46,15 @@ function openCard(nr) // 3. the core of the game is here
     if (firstCard== false)// 12.opening first card
     {
         firstCard = true; //13.first card is changed to true
-        //visibleCardNumber = nr; //14. when card is opened, it becomes number in the openCard function
+        secondOpenedCard = nr; //14. when card is opened, it becomes number in the openCard function
     }
     else // second card
     {   //alert(nr);
 
-        if (cards[secondOpenedcard]=[cards])// when clicking second card I need to show  it to the js then pair
+        if (cards[secondOpenedCard]=[cards])
+        {
+
+        }// when clicking second card I need to show  it to the js then pair
         numberOfMoves++; //15. the turn counter goes up one concatenate
         $(".points").html("Number of moves: " + numberOfMoves);// 16. Added jQuery how to add one point in moves, adding to HTML
        firstCard = false; //17. first card is covered
