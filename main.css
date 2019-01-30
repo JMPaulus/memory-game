@@ -5,6 +5,7 @@ body{
     text-align: center;
     
 }
+
 a:link{ color: blueviolet}
 a:visited{ color:red}
 a:active{ color:brown}
@@ -28,8 +29,6 @@ h1{
 }
 
 
-
-
 .card{
     width: 200px;
     height: 200px;
@@ -37,6 +36,7 @@ h1{
     margin:10px;
     border: 5px solid gold;
     background-image: url("Pictures/dino_1024x1024.png");/* found the image! The size was bad*/
+    background-color: black;
     border-radius:5px;
     cursor: pointer;
 }
@@ -47,4 +47,5 @@ h1{
     color:red;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 35px;
+    align-content: center;
 }
